@@ -11161,7 +11161,7 @@ body {
 }
 
 .contact-section {
-  padding-top: 5rem;
+  padding-top: 5rem; /* Reducido de 5rem a 2rem para acercar la sección */
 }
 .contact-section .card {
   border: 0;
@@ -11180,7 +11180,7 @@ body {
   width: 3rem;
 }
 .contact-section .social {
-  margin-top: 5rem;
+  margin-top: 5rem; /* Reducido de 5rem a 2rem */
 }
 .contact-section .social a {
   text-align: center;
@@ -11203,5 +11203,5 @@ body {
 }
 
 .masthead {
-    background-image: url("assets/img/bg-masthead.jpg");
+    background-image: url("bootstrap/assets/img/bg-signup.jpg");
 }
