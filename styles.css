@@ -604,6 +604,7 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 .img-thumbnail {
@@ -11117,6 +11118,7 @@ body {
 }
 .about-section p {
   margin-bottom: 5rem;
+  padding-bottom: 5rem;
 }
 
 .projects-section {
