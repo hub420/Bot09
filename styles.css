@@ -11228,3 +11228,27 @@ body {
 .masthead {
     background-image: url("bootstrap/assets/img/bg-signup.jpg");
 }
+
+/* Botón mejorado para tema oscuro */ 
+.btn-custom { background-color: #2d2d2d;
+  border: 1px solid #444; 
+  color: #e0e0e0; 
+  padding: 12px 16px;
+  border-radius: 8px; 
+  text-decoration: none;
+  display: block; 
+  margin-bottom: 10px; 
+  transition: all 0.3s ease; 
+  font-size: 14px; 
+  font-weight: 500; 
+  opacity: 1; 
+  /* Siempre visible */ 
+  visibility: visible; 
+  /* Siempre visible */ 
+} 
+
+.btn-custom:hover { background-color: #3a3a3a; 
+  border-color: #666; 
+  color: #ffffff; 
+  transform: translateY(-2px); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); }
