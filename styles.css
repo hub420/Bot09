@@ -5000,6 +5000,24 @@ textarea.form-control-lg {
   margin-left: calc(-1 * var(--bs-list-group-border-width));
   border-left-width: var(--bs-list-group-border-width);
 }
+/*media queries para celulares lo agrege junio*/
+@media (max-width: 575.98px) {
+  .signup-section {
+    padding: 4rem 1rem;
+    background-size: cover;
+    text-align: center;
+  }
+
+  .signup-section h1 {
+    font-size: 1.5rem;
+    word-break: break-word; /* evita cortar palabras como Automation */
+  }
+
+  .signup-section .form-signup input {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
 
 @media (min-width: 576px) {
   .list-group-horizontal-sm {
@@ -11091,7 +11109,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("bootstrap/assets/img/bg-signup.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11170,7 +11188,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: cover;
+  background-size: center;
 }
 .signup-section .form-signup input {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
@@ -11225,8 +11243,12 @@ body {
   padding: 5rem 0;
 }
 
-.masthead {
-    background-image: url("bootstrap/assets/img/bg-signup.jpg");
+/*amplia la foto a tada la app*/
+body {
+  background-image: url("bootstrap/assets/img/bg-signup.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* Botón mejorado para tema oscuro */ 

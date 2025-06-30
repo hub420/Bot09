@@ -8,11 +8,14 @@
     <meta name="author" content="" />
     <title>Tour Operator Bot09</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    
     <!-- Core theme CSS (includes Bootstrap) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
@@ -20,6 +23,7 @@
     <!-- Firebase Configuration -->
     <script src="firebase-config.js"></script>
 </head>
+
 <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -41,11 +45,14 @@
     </nav>
 
     <!-- Masthead-->
-    <header class="masthead bg-dark">
+    <header class="masthead">
         <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
             <div class="d-flex justify-content-center">
-                <div class="text-center">  <h1 class="mx-auto my-0 text-uppercase">Automation</h1>
-                    <h2 class="text-dark-50 mx-auto mt-2 mb-5">A responsive Monteverde tour operator</h2>
+                <div class="text-center">  
+                    <h1 class="mx-auto my-0 text-uppercase fw-bold text-center display-6 display-md-4 display-lg-3 text-white text-shadow letter-spacing-wide">
+                        <span class="text-gradient-primary">Automation</span>
+                    </h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">A responsive Monteverde tour operator</h2>
                     
                     <!-- Información del usuario autenticado -->
                     <div id="userInfo" style="display: none;" class="mb-3"></div>
@@ -55,16 +62,14 @@
                     <!-- Formulario de inicio de sesión mejorado -->
                     <form id="loginForm" class="mt-4" style="display: none;" onsubmit="return handleLogin(event);">
                         <div class="row justify-content-center">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-10">
                                 <div class="form-group mb-3">
                                     <label for="email" class="text-white">Email:</label>
-                                    <input type="email" class="form-control" id="email" name="email" required 
-                                           placeholder="tu@email.com">
+                                    <input type="email" class="form-control" id="email" name="email" required placeholder="tu@email.com">
                                 </div>
                                 <div class="form-group mb-3">
                                     <label for="password" class="text-white">Contraseña:</label>
-                                    <input type="password" class="form-control" id="password" name="password" required 
-                                           placeholder="••••••••" minlength="6">
+                                    <input type="password" class="form-control" id="password" name="password" required placeholder="••••••••" minlength="6">
                                 </div>
                                 <div class="d-grid gap-2">
                                     <button type="submit" class="btn btn-success btn-lg">
@@ -90,72 +95,74 @@
         </div>
     </header>
 
-    <!-- About-->
-     <!-- About Section -->
+    <!-- About Section -->
     <section class="about-section text-white" id="about">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <h2 class="section-title">Booking with AI Technologies</h2>
-                    <p class="text-white-70">
-                        Bot09 is here to assist you in finding information about the Monteverde Tourist Offer. You can start by typing 'Hello.' Lito, our tour agent, will be available to help you primarily in English and Spanish, as human intervention is required to complete the tasks.
-                        We prioritize security and protection against misuse or potential security breaches. Therefore you will be prompted to provide your email address. This step is essential for us to offer you better support while minimizing risks and ensuring superior customer care.</p>
+        <div class="container my-5">
+            <div class="row align-items-center mb-5 flex-lg-row-reverse">
+                <div class="col-lg-6">
+                    <div class="project-card bg-dark bg-opacity-75 p-4 rounded shadow">
+                        <h2 class="section-title">About Booking with Artificial Intelligence</h2>
+                        <p class="text-white-70">
+                            Bot09 is here to assist you in finding information about the Monteverde Tourist Offer. You can start by typing 'Hello.' Lito, our tour agent, will be available to help you primarily in English and Spanish, as human intervention is required to complete the tasks.
+                            We prioritize security and protection against misuse or potential security breaches. Therefore you will be prompted to provide your email address. This step is essential for us to offer you better support while minimizing risks and ensuring superior customer care.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-lg-6 mb-4 text-center">
-                    <img class="img-fluid img-fluid-custom" src="media/1erafusion.jpg" alt="Monteverde AI Booking" />
-                </div>
-            </div>
+                <div class="col-12 col-md-6 mb-4 mb-md-0 text-center">
+                    <img 
+                        class="img-fluid rounded shadow-sm mx-auto d-block" 
+                        src="media/img-logo-0.jpg" 
+                        alt="Monteverde AI Booking" 
+                        loading="lazy"/>
+                    </div>
+
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="projects-section bg-dark" id="projects">
+    <!-- Services/Projects Section -->
+    <section class="projects-section" id="projects">
         <div class="container">
             <!-- What is expected from Bot09 -->
             <div class="row align-items-center mb-5">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <img class="img-fluid img-fluid-custom" src="media/2dafusion.jpg" alt="Bot09 Services" />
-                </div>
                 <div class="col-lg-6">
-                    <div class="ps-lg-4">
-                        <h3 class="text-white mb-4">What is Expected from Bot09</h3>
-                        <p class="text-white-50">
-                            This bot is optimized for searching for services in the Monteverde area and surroundings. The information shown here is related to adventure services, ecology, emerging ecotourism or agroecotourism projects. It is not channeled in the search for accommodation or food services, however as technology grows and new links with merchants develop, this tourist information and reservation site intends to grow accordingly.
+                    <div class="project-card bg-dark bg-opacity-75 p-4 rounded shadow">
+                        <h3 class="text-white mb-3 fw-bold">What is Expected from Bot09</h3>
+                        <p class="text-white-50 fs-5">
+                            Bot09 is optimized for searching services in Monteverde and nearby areas, focusing on adventure, ecology, and emerging eco/agro-tourism projects. While accommodation and food services are not the main focus, we aim to expand as new partnerships develop. Our goal is to provide up-to-date tourist information and a seamless reservation experience.
                         </p>
                     </div>
+                </div>
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img class="img-fluid rounded shadow" src="media/img-logo-1.jpg" alt="Bot09 Services" />
                 </div>
             </div>
 
             <!-- Suggestions -->
-            <div class="row align-items-center mb-5">
-                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-                    <img class="img-fluid img-fluid-custom" src="media/3erafusion.jpg" alt="Technology Suggestions" />
+            <div class="row align-items-center mb-5 flex-lg-row-reverse">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img class="img-fluid rounded shadow" src="media/img-logo-2.jpg" alt="Technology Suggestions" />
                 </div>
-                <div class="col-lg-6 order-lg-1">
-                    <div class="project-card">
-                        <div>
-                            <h3 class="text-white mb-4">Suggestions</h3>
-                            <p class="text-white-50">
-                                We are dealing with new technologies that present significant opportunities in many fields. This project has areas for improvement that we are constantly working on. Once you decide to share your contact information, you will receive the details of the requests made. Please review these details carefully. You can contact us directly, and we recommend having stable internet access for this virtual interaction.
-                            </p>
-                        </div>
+                <div class="col-lg-6">
+                    <div class="project-card bg-dark bg-opacity-75 p-4 rounded shadow">
+                        <h3 class="text-white mb-3 fw-bold">Suggestions</h3>
+                        <p class="text-white-50 fs-5">
+                            We are embracing new technologies that offer great opportunities. This project is a work in progress, and your feedback is valuable. After sharing your contact information, you will receive details about your requests—please review them carefully. For the best experience, ensure a stable internet connection and feel free to contact us directly for assistance.
+                        </p>
                     </div>
                 </div>
             </div>
 
             <!-- AI Section -->
             <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <img class="img-fluid img-fluid-custom" src="media/mindtech.avif" alt="AI Technology" />
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img class="img-fluid rounded shadow" src="media/mindtech.avif" alt="AI Technology" />
                 </div>
                 <div class="col-lg-6">
-                    <div class="project-card">
-                        <div>
-                            <h3 class="text-white mb-4">Artificial Intelligence</h3>
-                            <p class="text-white-50">
-                                Dedicated to leveraging artificial intelligence and software development for the benefit of both users and developers. This collaborative approach involves everyone, utilizing capable applications across various fields. Our goal is to use these tools to enhance our work, not to replace ourselves.
-                            </p>
-                        </div>
+                    <div class="project-card bg-dark bg-opacity-75 p-4 rounded shadow">
+                        <h3 class="text-white mb-3 fw-bold">Artificial Intelligence</h3>
+                        <p class="text-white-50 fs-5">
+                            We leverage artificial intelligence and software development to benefit both users and developers. Our collaborative approach encourages everyone to use advanced tools to enhance their work, not to replace themselves. Together, we can unlock new possibilities across various fields.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -163,19 +170,18 @@
     </section>
 
     <!-- Video Links Section -->
-    <section class="about-section text-white " id="video-links">
+    <section class="about-section text-white" id="video-links">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 ">
-                    <img class="img-fluid" src="media/ayer.jpg" alt="Monteverde Yesterday" />
+                <div class="col-lg-6 mb-4">
+                    <img class="img-fluid rounded shadow" src="media/img-logo-3.jpg" alt="Monteverde Yesterday" />
                 </div>
                 <div class="col-lg-6">
-                    <div class="text-center text-lg-start ps-lg-4">
+                    <div class="project-card bg-dark bg-opacity-75 p-4 rounded shadow">
                         <h3 class="text-white section-title">Monteverde Video Tours</h3>
-                        <p class="text-white-50 section-subtitle">Explore our video collection showcasing the best of Monteverde's adventure experiences</p>
-                                                
-                        <div class="row g-3">
-                            <div class="col-md-6">
+                        <p class="text-white-50 section-subtitle">Explore our video collection showcasing the best of Monteverde's adventure experiences</p>                     
+                        <div class="row g-3 text-success">
+                            <div class="col-md-6 ">
                                 <a href="https://www.youtube.com/watch?v=bbg7iViPLEQ" class="btn btn-custom-gradient w-100" target="_blank">
                                     <i class="fas fa-play me-2"></i>Aventura Canopy
                                 </a>
@@ -240,15 +246,12 @@
                                 <i class="fab fa-whatsapp text-success" style="font-size: 2.5rem;"></i>
                             </div>
                             <h4 class="text-uppercase mb-3">WhatsApp</h4>
-                            <p class="text-muted mb-0">+506 8652 2600</p>
                         </div>
                     </a>
-                </div>
                 </div>
             </div>
         </div>
     </section>
-
 
     <!-- Footer-->
     <footer class="footer bg-black small text-white-50" style="background-image: url('media/1Logo.png'); background-size: cover; background-position: 50% 20%; min-height: 100px;">
