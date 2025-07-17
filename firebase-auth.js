@@ -221,3 +221,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, 1000);
 });
+
+// tokens de expiracion del tiempo de sesion 
+const TokenManager = {
+  setTokenWithExpiration: (token, expirationMinutes = 30) => {
+    const expirationTime = Date.now() + (expirationMinutes * 30 * 1000);
+    localStorage.setItem('authToken', token);
+    localStorage.setItem('tokenExpiration', expirationTime.toString());
+  },
+  
+  isTokenExpired: () => {
+    const expiration = localStorage.getItem('tokenExpiration');
+    return expiration ? Date.now() > parseInt(expiration) : true;
+  },
+  
+  logout: () => {
+    localStorage.removeItem('authToken');
+    localStorage.removeItem('tokenExpiration');
+    firebase.auth().signOut();
+    window.location.href = 'index.html';
+  }
+};
